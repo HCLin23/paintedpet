@@ -1,0 +1,125 @@
+//layout
+.hidden-text{
+    text-indent: 110%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.link-hover-custom:hover,.link-hover-custom:focus{
+    color: $primary !important;
+}
+
+.btn-hover-custom:hover,.btn-hover-custom:focus,.btn-hover-custom:active{
+    box-shadow: 0px 5px .5px 1px;
+    background-color: $primary;
+}
+
+.btn-close-focus-custom:focus {
+    box-shadow: 0 0 0 0.25rem #fff;
+} 
+
+.btn-hover-custom-sec:hover,.btn-hover-custom-sec:focus{
+    border-color: $primary !important;
+}
+
+//index
+.banner-text{
+    display:none;
+    @include media-breakpoint-up(lg){
+        display: block;
+        color: #848975;
+        left:50%;
+        -webkit-text-stroke: 2px #fff;
+        font-family: 'Kalam', cursive;
+        font-weight: bolder;
+        animation: m-horizontally 1s ease-in-out 0s alternate, fill .4s ease 1s alternate;
+        }
+}
+
+.card-effect-gradient-black{
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+    opacity: 0; //include font
+    transition: all ease .5s;
+    &:hover,&:focus{
+        opacity: 1;
+    }
+}
+
+.card-hover-custom{
+    box-shadow: $box-shadow;
+    transition: all ease .5s;
+    .hoverImg{
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0;
+        transition: all ease .5s;
+    }
+    a{
+        transition: all ease .5s;
+    }
+    &:hover,&:focus{
+        box-shadow: $box-shadow-lg;
+        .hoverImg{
+            opacity: 1;
+        }
+        a{
+            color:$primary !important; 
+        }
+    }
+}
+
+.imgChange-dialogueBox-effect{
+    p,.hover-asideImg{
+        opacity: 0;
+        transition: opacity ease .5s;
+    }
+    &:hover,&:focus{
+        p,.hover-asideImg{ 
+            opacity: 1;
+        }
+    }
+}
+
+//portfolio
+.designer-sign{
+    display: flex;
+    align-items:center;
+    transition: margin-left .5s linear;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 0px;
+        background-color: $primary;
+        top:14px;
+        left: -22px;
+        transition: width .5s linear;
+    }
+}
+.sign-active{
+    color: $primary;
+}
+
+@include media-breakpoint-up(lg){
+    .designer-sign:hover,.designer-sign:focus{
+        margin-left:24px;
+        &::before{
+            width: 12px;
+        } 
+    }
+    .sign-active{
+        margin-left:24px;
+        color: $primary;
+        &::before{
+            width: 12px;
+        }
+    }
+}
+
+//adoption
+.page-link-active{
+    color:$primary;
+}
+

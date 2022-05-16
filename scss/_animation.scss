@@ -1,0 +1,11 @@
+@keyframes fill {
+    to { -webkit-text-fill-color: $primary; }
+}
+@keyframes m-horizontally {
+    0% { left: -10%;}
+    // 50% { left: 20%;}
+    100% { left: 50%;}
+}
+
+
+
