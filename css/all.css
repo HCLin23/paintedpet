@@ -15345,6 +15345,8 @@ fieldset:disabled .btn {
 .designer-sign::before {
   content: '';
   position: absolute;
+  height: 2px;
+  width: 0px;
   background-color: #F9C745;
   top: 14px;
   left: -22px;

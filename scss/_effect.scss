@@ -81,8 +81,7 @@
     }
 }
 
-////height: 2px;
-//width: 0px;
+
 //portfolio
 .designer-sign{
     display: flex;
@@ -92,7 +91,8 @@
     &::before{
         content: '';
         position: absolute;
-        
+        height: 2px;
+        width: 0px;
         background-color: $primary;
         top:14px;
         left: -22px;
