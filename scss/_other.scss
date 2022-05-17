@@ -57,7 +57,7 @@ main{
     }
 }
 
-//黑色三角形
+//側邊連結-黑色三角形
 .dialogueBox::before {
     position:absolute;
     content:"";
@@ -73,7 +73,7 @@ main{
     border-bottom-color: transparent;
     border-left-color: transparent ;
 }
-//白色三角形
+//側邊連結-白色三角形
 .dialogueBox::after{
     position:absolute;
     content:"";
