@@ -88,16 +88,16 @@
     align-items:center;
     transition: margin-left .5s linear;
     position: relative;
-    &::before{
-        content: '';
-        position: absolute;
-        height: 2px;
-        width: 0px;
-        background-color: $primary;
-        top:14px;
-        left: -22px;
-        transition: width .5s linear;
-    }
+        &::before{
+            content:'';
+            position: absolute;
+            height: 2px;
+            width: 0px;
+            background-color: $primary;
+            top:14px;
+            left: -22px;
+            transition: width .5s linear;
+        }
 }
 .sign-active{
     color: $primary;

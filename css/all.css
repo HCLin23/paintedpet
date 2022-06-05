@@ -15343,7 +15343,7 @@ fieldset:disabled .btn {
 }
 
 .designer-sign::before {
-  content: '';
+  content: '';
   position: absolute;
   height: 2px;
   width: 0px;
