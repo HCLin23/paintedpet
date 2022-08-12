@@ -1,6 +1,6 @@
 # Bootstrap 的寵物似顏繪網站
 
-[網站連結](hclin23.github.io/paintedpet/index.html)
+[網站連結](https://hclin23.github.io/paintedpet/index.html)
 <hr></hr>
 
 ![image](https://github.com/HCLin23/paintedpet/blob/main/img/forReadMe.png)
